@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!--
+  ~ GymBeam s.r.o.
+  ~
+  ~ Copyright © GymBeam, All rights reserved.
+  ~
+  ~ @author K. Goč-Benka <kristian.goc-benka@gymbeam.com>
+  ~ @copyright Copyright © 2019  GymBeam (https://gymbeam.com/)
+  ~ @category GymBeam
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="supreme"
+             sortOrder="0"
+             translate="label">
+            <label><![CDATA[<strong>Supreme</strong><br /><small>extension configuration</small>]]></label>
+        </tab>
+        <section id="supreme_debug"
+                 showInDefault="1"
+                 showInStore="1"
+                 showInWebsite="1"
+                 sortOrder="10"
+                 translate="label">
+            <label>Debug</label>
+            <tab>supreme</tab>
+            <resource>Supreme_Debug::general</resource>
+            <group id="block_info"
+                   showInDefault="1"
+                   showInStore="1"
+                   showInWebsite="1"
+                   sortOrder="40"
+                   translate="label">
+                <label>Block render info</label>
+                <field id="enable" showInDefault="1"
+                       showInStore="1"
+                       showInWebsite="1"
+                       sortOrder="10"
+                       translate="label"
+                       type="select">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable / Disable tags with block name and template in source code.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

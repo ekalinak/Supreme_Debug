@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--
+  ~ GymBeam s.r.o.
+  ~
+  ~ Copyright © GymBeam, All rights reserved.
+  ~
+  ~ @author K. Goč-Benka <kristian.goc-benka@gymbeam.com>
+  ~ @copyright Copyright © 2019  GymBeam (https://gymbeam.com/)
+  ~ @category GymBeam
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <supreme_debug>
+            <block_info>
+                <enable>0</enable>
+            </block_info>
+        </supreme_debug>
+    </default>
+</config>

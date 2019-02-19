@@ -1,0 +1,21 @@
+{
+  "name": "supreme/debug",
+  "description": "Magento 2 module with custom debug tools",
+  "license": "proprietary",
+  "authors": [
+    {
+      "email": "kristian.goc-benka@cs2.ch",
+      "name": "Cs2"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Supreme\\Debug\\": ""
+    }
+  }
+}
